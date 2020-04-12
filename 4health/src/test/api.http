@@ -1,0 +1,36 @@
+###
+POST http://localhost:8080/people
+Content-Type:application/x-www-form-urlencoded
+
+userId=proba&password=proba&age=12
+
+###
+PATCH http://localhost:8080/exercises/ok
+Content-Type: application/x-www-form-urlencoded
+
+name=proba&description=2&picUrl=
+
+###
+DELETE http://localhost:8080/foods/test
+
+
+###
+GET http://localhost:8080/foods/Egg
+
+
+###
+PUT http://localhost:8080/diets/Paleo/ljubica123
+
+###
+POST http://localhost:8080/ljubica123
+
+###
+DELETE http://localhost:8080/supplements/test/delete/ljubica123
+
+###
+
+
+
+
+
+

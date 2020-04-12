@@ -1,0 +1,22 @@
+.card{
+    background: none !important;
+    color: #cac2ba;
+    border: solid #21747b !important;
+
+}
+
+.imageE{
+    border-radius: 25px;
+    background: white;
+    margin-left: 5px;
+    width: 260px;
+    height: 200px;
+    padding: 0;
+}
+
+.remove{
+    margin-left: 250px;
+    margin-bottom: 70px;
+    padding: 0;
+}
+

@@ -1,0 +1,11 @@
+.element2{
+    border:solid #21747b ;
+}
+.itemName2{
+    text-align: center;
+    color: #cac2ba;
+
+}
+.element2:hover{
+    background-color: #0a0a0a;
+}

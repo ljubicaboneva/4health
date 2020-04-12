@@ -1,0 +1,20 @@
+.backEdit{
+    background-image: url(../images/Backgrounds/p4.jpg);
+    min-height: 100%;
+    min-width: 1024px;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    font-family: Cambria;
+}
+
+.edit{
+    color:white;
+    border-radius: 20px;
+    border: solid;
+    margin: 25px;
+    padding: 5%;
+}
