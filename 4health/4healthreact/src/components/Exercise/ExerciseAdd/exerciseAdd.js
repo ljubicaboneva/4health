@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom';
 import "../../addEdit.css"
-
-
 const ExerciseAdd = (props) =>{
 
     const[exercise, setExercise] = useState({});

@@ -40,9 +40,6 @@ const PersonService = {
     },
     showCart:(id) => {
         return axios.get(`http://localhost:8080/people/${id}/cart`)
-    },
-    setUser:(id) =>{
-        return axios.post(`http://localhost:8080/${id}`)
-        }
+    }
 };
 export default PersonService;

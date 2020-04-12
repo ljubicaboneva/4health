@@ -39,7 +39,7 @@ class Diet extends Component{
         return(
                 <div >
                     {this.seeState()}
-                    {this.more()}
+                    {this.button()}
                     {this.edit()}
                     {this.remove()}
                 </div>)
@@ -49,12 +49,21 @@ class Diet extends Component{
     more() {
         return (
 
-            <button onClick={()=> this.klik()}  className="btn mr-2 btn-outline-light">
+            <button onClick={()=> this.click()}  className="btn mr-2 btn-outline-light">
                 <span className="fa fa-info"/>
-                <span>More</span>
+                <span> More</span>
             </button>
 
 
+        )
+    }
+
+    less(){
+        return (
+            <button onClick={()=> this.click()}  className="btn mr-2 btn-outline-light ">
+                <span className="fa fa-info"/>
+                <span> Less</span>
+            </button>
         )
     }
 
@@ -78,13 +87,20 @@ class Diet extends Component{
         )
     }
 
-    klik() {
+    click() {
         if (this.state.desc === '0') {
             this.setState({desc: '1'});
 
         } else {
             this.setState({desc: '0'});
         }
+    }
+
+    button(){
+        if(this.state.desc ==='0'){
+            return this.more();
+        }
+        return this.less()
     }
 
 

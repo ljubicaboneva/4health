@@ -45,7 +45,6 @@ class App extends Component{
 
     componentDidMount(){
         this.loadData();
-        PersonService.setUser("ljubica123");
     }
 
     loadData = () => {
