@@ -23,6 +23,8 @@ You need to create the database with:
 <br>
 <b>name:4health</b>
 <br>
+<b>Port:5543</b>
+<br>
 <b>username:postgres</b>
 <br>
 <b>password:internet</b>
