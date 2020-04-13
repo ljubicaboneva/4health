@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom';
 import "../../addEdit.css";
+import Footer from "../../Footer/footer";
 
 const SupplementAdd = (props) => {
     const [supplement, setSupplement] = useState({});
@@ -202,6 +203,7 @@ const SupplementAdd = (props) => {
                     </div>
                 </div>
             </div>
+            <span className={"fixed-bottom"}> <Footer/> </span>
         </div>
     )
 };

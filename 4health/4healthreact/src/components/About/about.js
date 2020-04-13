@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.css'
 import PieChart from "../d3/pieChart";
+import Footer from "../Footer/footer";
 
 const About = () => {
 
@@ -30,6 +31,7 @@ const About = () => {
             </div>
             </div>
         </div>
+            <span className={"fixed-bottom"}> <Footer/> </span>
         </div>
 
 )

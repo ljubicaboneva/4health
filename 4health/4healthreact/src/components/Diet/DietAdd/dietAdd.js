@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom';
 import "../../addEdit.css"
+import Footer from "../../Footer/footer";
 
 const DietAdd = (props) => {
 
@@ -132,6 +133,7 @@ const DietAdd = (props) => {
                     </form>
                 </div>
             </div>
+            <span className={"fixed-bottom"}> <Footer/> </span>
         </div>
     )
 };

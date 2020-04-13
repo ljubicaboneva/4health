@@ -3,6 +3,7 @@ import DietItem from '../DietItem/diet';
 import { Link } from "react-router-dom";
 import "../../addButton.css";
 import './diets.css';
+import Footer from "../../Footer/footer";
 
 const DietsList = (props) => {
 
@@ -13,16 +14,19 @@ const DietsList = (props) => {
     const tableWithDiets = () => {
         return (
             <div className="table-responsive">
-                <table className="table tr-history table-striped table1" >
+                <table className="table tr-history table-striped table1 container mt-lg-5" style={{color: 'white'}} >
                     <tbody >{diets1}</tbody>
                 </table>
+                <Footer/>
             </div>
         )
     };
 
     const noDiets = () => {
         return(
-            <div className={"col-12 mt-4 p-0 text-left mb-5"}>There are no diets</div>
+            <div className={"col-12 mt-4 p-0 text-left mb-5"} style={{color: 'white'}}>There are no diets
+                <span className={"fixed-bottom"}> <Footer/> </span>
+            </div>
         )
     };
 
@@ -49,18 +53,17 @@ const DietsList = (props) => {
 
     return(
         <div className="backD">
-            <div className="container mt-lg-5" style={{color: 'white'}}>
+            <div>
                 <br/>
                 <br/>
-                <div>
+                <div className="container mt-lg-5" style={{color: 'white'}}>
                     <h4 style={{fontFamily: "High Tower Text"}}>Chose your diet! <br/>
                         If you like you can add your own.</h4>
                     <br/>
                 </div>
                 {addDiet()}
-                <br/> <br/> <br/>
+                <br/>
             {showDiets()}
-
         </div>
         </div>
 

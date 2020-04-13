@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import TextField from '@material-ui/core/TextField';
 import "../../addButton.css";
 import './foods.css';
+import Footer from "../../Footer/footer";
 
 const FoodList = (props) => {
 
@@ -43,11 +44,9 @@ const FoodList = (props) => {
 
         return (
             <div className="table-responsive">
-                <table className="table tr-history table-striped" style={{color: 'white'}}>
+                <table className="table tr-history table-striped container mt-lg-5" style={{color: 'white'}}>
                     {header()}
-
                     <tbody>{items}</tbody>
-
                 </table>
             </div>
         )
@@ -84,10 +83,11 @@ const FoodList = (props) => {
     const text1 = "Find out calories";
     return (
         <div className="backF" style={{fontFamily: "Cambria"}}>
-            <div className="container mt-lg-5" style={{color: 'white'}}>
+            <div>
                 <br/><br/>
-                <h3 style={{fontFamily: "High Tower Text"}} className="text-upper">Foods</h3><br/>
-                <div className={"row"}>
+                <h3 style={{fontFamily: "High Tower Text",color: 'white'}} className="text-upper container mt-lg-5">Foods</h3>
+                <div className={"container"}>
+                <div className="row" style={{color: 'white'}}>
                     <div className={"col-9"}>
                         {showFoods()}
                     </div>
@@ -115,6 +115,8 @@ const FoodList = (props) => {
 
                 </div>
             </div>
+            </div>
+            <Footer/>
         </div>
 
     )

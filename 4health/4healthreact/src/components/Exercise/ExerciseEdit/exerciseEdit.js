@@ -3,6 +3,7 @@ import ExerciseService from "../../../service/axiosExerciseService";
 import {useHistory} from 'react-router-dom';
 import {useParams} from "react-router";
 import "../../addEdit.css"
+import Footer from "../../Footer/footer";
 
 const ExerciseEdit = (props) => {
 
@@ -148,6 +149,7 @@ const ExerciseEdit = (props) => {
                     </div>
                 </div>
             </div>
+            <span className={"fixed-bottom"}> <Footer/> </span>
         </div>
 
     )

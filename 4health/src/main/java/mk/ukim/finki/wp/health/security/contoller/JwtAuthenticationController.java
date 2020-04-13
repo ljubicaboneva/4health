@@ -1,4 +1,4 @@
-package mk.ukim.finki.wp.health.security.contoller;
+/*package mk.ukim.finki.wp.health.security.contoller;
 import mk.ukim.finki.wp.health.security.config.JwtTokenUtil;
 import mk.ukim.finki.wp.health.security.model.JwtRequest;
 import mk.ukim.finki.wp.health.security.model.JwtResponse;

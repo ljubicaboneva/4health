@@ -2,6 +2,7 @@ import React,{useState,useEffect}  from 'react';
 import PersonService from "../../../service/axiosPersonService";
 import {useParams} from "react-router";
 import './cart.css';
+import Footer from "../../Footer/footer";
 const Cart = (props) => {
 
     const {id} = useParams();
@@ -64,6 +65,7 @@ const Cart = (props) => {
                     {header()}
                     <tbody>{listSupplements}</tbody>
                 </table>
+                <br/>  <br/>
             </div>
         )
     };
@@ -97,6 +99,8 @@ const Cart = (props) => {
             {showExercises()}
         </div>
             </div>
+
+            <span className={"fixed-bottom"}> <Footer/> </span>
         </div>
     )
 

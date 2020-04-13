@@ -3,6 +3,7 @@ import PersonService from "../../../service/axiosPersonService";
 import {useHistory} from 'react-router-dom';
 import {useParams} from "react-router";
 import "../../addEdit.css"
+import Footer from "../../Footer/footer";
 
 const PersonEdit = (props) => {
 
@@ -183,7 +184,6 @@ const PersonEdit = (props) => {
 
     return (
         <div className="backEdit">
-            <br/>
             <div className="container mt-lg-5">
         <div className="row">
             <div className="col-8">
@@ -210,6 +210,7 @@ const PersonEdit = (props) => {
             </div>
         </div>
             </div>
+            <span className={"fixed-bottom"}> <Footer/> </span>
         </div>
     )
 

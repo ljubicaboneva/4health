@@ -1,4 +1,4 @@
-package mk.ukim.finki.wp.health.security.dao;
+/*package mk.ukim.finki.wp.health.security.dao;
 
 import mk.ukim.finki.wp.health.security.model.DAOUser;
 import org.springframework.data.repository.CrudRepository;

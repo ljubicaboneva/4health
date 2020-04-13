@@ -3,6 +3,7 @@ import {useHistory} from 'react-router-dom';
 import {useParams} from "react-router";
 import SupplementService from "../../../service/axiosSupplementService";
 import "../../addEdit.css";
+import Footer from "../../Footer/footer";
 
 const SupplementEdit = (props) => {
     const [supplement, setSupplement] = useState({});
@@ -191,6 +192,7 @@ const SupplementEdit = (props) => {
                     </div>
                 </div>
             </div>
+            <span className={"fixed-bottom"}> <Footer/> </span>
         </div>
     )
 

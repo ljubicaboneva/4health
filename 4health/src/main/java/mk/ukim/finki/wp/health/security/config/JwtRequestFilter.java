@@ -1,4 +1,4 @@
-package mk.ukim.finki.wp.health.security.config;
+/*package mk.ukim.finki.wp.health.security.config;
 
 import java.io.IOException;
 

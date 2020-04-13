@@ -2,6 +2,7 @@ import React,{useState,useEffect}  from 'react';
 import PersonService from "../../../service/axiosPersonService";
 import {useParams} from "react-router";
 import './fav.css';
+import Footer from "../../Footer/footer";
 
 const Favourites = (props) => {
 
@@ -48,6 +49,7 @@ const Favourites = (props) => {
                     </tbody>
 
                 </table>
+                <br/><br/>
             </div>
         )
     };
@@ -76,6 +78,7 @@ const Favourites = (props) => {
 
                 </div>
             </div>
+            <span className={"fixed-bottom"}> <Footer/> </span>
         </div>
     )
 

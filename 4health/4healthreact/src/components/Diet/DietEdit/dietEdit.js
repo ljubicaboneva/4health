@@ -3,6 +3,7 @@ import DietService from "../../../service/axiosDietService";
 import {useHistory} from 'react-router-dom';
 import {useParams} from "react-router";
 import "../../addEdit.css"
+import Footer from "../../Footer/footer";
 
 const DietEdit = (props) => {
 
@@ -129,6 +130,7 @@ const DietEdit = (props) => {
                     </form>
                 </div>
             </div>
+            <span className={"fixed-bottom"}> <Footer/> </span>
         </div>
 
 

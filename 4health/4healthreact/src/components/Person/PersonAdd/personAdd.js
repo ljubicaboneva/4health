@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom';
 import "../../addEdit.css"
+import Footer from "../../Footer/footer";
 
 const PersonAdd = (props) => {
     const[person, setPerson] = useState({});
@@ -197,7 +198,6 @@ const PersonAdd = (props) => {
 
     return (
         <div className="backEdit">
-            <br/>
             <div className="container mt-lg-5">
         <div className="row">
             <div className="col-8">
@@ -225,6 +225,7 @@ const PersonAdd = (props) => {
         </div>
             </div>
         </div>
+            <span className={"fixed-bottom"}> <Footer/> </span>
         </div>
     )
 

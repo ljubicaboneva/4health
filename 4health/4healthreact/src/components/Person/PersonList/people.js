@@ -3,6 +3,7 @@ import PersonItem from '../PersonItem/person';
 import { Link } from "react-router-dom";
 import "../../addButton.css";
 import './people.css';
+import Footer from "../../Footer/footer";
 
 const PersonList = (props) => {
 
@@ -74,6 +75,7 @@ const PersonList = (props) => {
                     <div style={{marginLeft:'970px'}}>{addPerson()}</div>
         </div>
             </div>
+            <span className={"fixed-bottom"}> <Footer/> </span>
         </div>
     )
 

@@ -1,4 +1,4 @@
-package mk.ukim.finki.wp.health.security.model;
+/*package mk.ukim.finki.wp.health.security.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

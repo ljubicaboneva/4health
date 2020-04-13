@@ -21,7 +21,6 @@ class Supplement extends Component {
                         <Card.Title><span>{this.props.supplement.name}</span></Card.Title>
                         <Card.Text style={{color:'white',width:'180',height:'180'}}>
                             {this.details()}
-
                         </Card.Text>
                         <Card.Footer style={{position:'absolute', bottom:'0',paddingLeft:'50px'}}>
                             <p>Price: {this.props.supplement.price}$</p>
@@ -136,7 +135,7 @@ class Supplement extends Component {
             )
         }
         return(
-            <div> {this.checkImg()}</div>
+            <div>  {this.checkImg()} <br/></div>
             )
 
     }

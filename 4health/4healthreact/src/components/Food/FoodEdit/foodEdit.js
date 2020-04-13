@@ -3,6 +3,7 @@ import {useHistory} from 'react-router-dom';
 import {useParams} from "react-router";
 import FoodService from "../../../service/axiosFoodService";
 import "../../addEdit.css"
+import Footer from "../../Footer/footer";
 
 const FoodEdit = (props) => {
     const[food, setFood] = useState({});
@@ -147,6 +148,7 @@ const FoodEdit = (props) => {
             </div>
             </div>
             </div>
+            <span className={"fixed-bottom"}> <Footer/> </span>
         </div>
 
     )

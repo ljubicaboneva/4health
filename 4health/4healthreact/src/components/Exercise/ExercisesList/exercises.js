@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./exercises.css"
 import CardColumns from 'react-bootstrap/CardColumns'
 import "../../addButton.css";
+import Footer from "../../Footer/footer";
 
 const ExercisesList = (props) => {
 
@@ -16,17 +17,20 @@ const ExercisesList = (props) => {
 
     const tableWithExercises = () => {
         return (
-            <div className="row" style={{color: 'white'}}>
+            <div>
+            <div className="container mt-lg-5" style={{color: 'white'}}>
 
                 <CardColumns>{exercises}</CardColumns>
-
+            </div>
+                <Footer/>
             </div>
         )
     };
 
     const noExercises = () => {
         return (
-            <div className={"col-12 mt-4 p-0 text-left mb-5"} style={{color: 'white'}}>There are no exercises</div>
+            <div className={"col-12 mt-4 p-0 text-left mb-5"} style={{color: 'white'}}>There are no exercises
+                <span className={"fixed-bottom"}> <Footer/> </span></div>
         )
     };
 
@@ -53,18 +57,16 @@ const ExercisesList = (props) => {
 
     return (
         <div className="backE">
-            <div className="container mt-lg-5" style={{color: 'white'}}>
+            <div>
                 <br/>
                 <br/>
-                <div>
+                <div className="container mt-lg-5" style={{color: 'white'}}>
                     <h4 style={{fontFamily: "High Tower Text"}}>Here are some exercises for you! <br/>
                         If you like you can add your own.</h4>
                     <br/>
                 </div>
 
                 {addExercise()}
-                <br/>
-                <br/>
                 <br/>
                 {showExercises()}
 
